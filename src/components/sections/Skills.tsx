@@ -5,7 +5,7 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { 
   SiLinux, SiDocker, SiKubernetes, SiTerraform, SiJenkins, 
   SiGithubactions, SiGit, SiAnsible, SiPrometheus, SiGrafana, SiNginx, 
-  SiRedis, SiPostgresql, SiReact, SiNodedotjs, SiExpress, SiJavascript, 
+  SiRedis, SiPostgresql, SiReact, SiNodedotjs, SiExpress, 
   SiTypescript, SiHtml5
 } from 'react-icons/si';
 import { FaAws } from 'react-icons/fa';
@@ -211,7 +211,7 @@ export default function Skills() {
           {skills.map((skill, index) => (
             <div
               key={skill.name}
-              ref={el => iconsRef.current[index] = el}
+              ref={el => { iconsRef.current[index] = el; }}
               className="absolute group w-20 h-20 md:w-28 md:h-28 bg-white/80 backdrop-blur-md rounded-3xl shadow-lg border border-border/50 flex items-center justify-center transition-shadow hover:shadow-2xl hover:border-primary/20 cursor-pointer"
             >
               <skill.Icon 

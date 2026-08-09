@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { CheckCircle2, Terminal, Container, Cloud, Settings, BarChart, Shield, ArrowRight } from 'lucide-react';
+import { CheckCircle2, Terminal, Container, Cloud, Settings, BarChart, Shield } from 'lucide-react';
 
 const focusAreas = [
   "Docker", "Kubernetes", "Terraform", "AWS", 

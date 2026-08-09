@@ -519,7 +519,7 @@ function DeepDiveExperience({ project, onClose }: { project: ProjectType; onClos
   );
 }
 
-function ProjectCard({ project, idx, onDeepDive }: { project: ProjectType; idx: number; onDeepDive: () => void }) {
+function ProjectCard({ project, onDeepDive }: { project: ProjectType; onDeepDive: () => void }) {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
 
   return (
@@ -624,7 +624,6 @@ export default function Projects() {
             <ProjectCard 
               key={idx} 
               project={project} 
-              idx={idx} 
               onDeepDive={() => setSelectedProject(project)} 
             />
           ))}
